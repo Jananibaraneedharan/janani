@@ -1,0 +1,35 @@
+<html>
+<head>
+<title> form</title>
+</head>
+<form>
+<label> username:
+<input type="text" id="jan" placeholder="enter your username">
+</label>
+<br>
+<label>password:
+<input type="password" id="janani" placeholder="enter your password">
+</label>
+<br>
+<input type="submit" value="click here" onclick="check()">
+</form>
+</body>
+<script type="text/javascript">
+function check()
+{
+var uname=document.getElementById("jan").value;
+var pass=document.getElementById("janani").value;
+var alphabet=/^[a-z A-Z]+$/g;
+if(!alphabet.test(uname))
+{
+alert("username is not valid");
+}
+var digit=/^[0-9]+$/g;
+if(!digit.test(pass))
+{
+alert("invalid password");
+}
+}
+</script>
+
+</html>
